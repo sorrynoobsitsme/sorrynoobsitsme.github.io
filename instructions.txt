@@ -1,0 +1,23 @@
+Instructions:
+-------------
+
+1. Logos and other photos are located in the \images directory
+
+2. Don't forget to use a favicon. You can create one in many ways.
+   I recommend an online image converter such as
+   https://www.favicon-generator.org/
+
+3. Add authorized users to the "ldap.php" file:
+   -----------------------------------------
+   In "ldap.php" find the "// List of authorized users" section.
+   Below that heading there will be a variable called "$authorized_users".
+   Add any users that you want to have access to the IT Start Page to the array.
+
+   For example, if you want aduser1, aduser2, and aduser3 to have access to the page
+   modify the line to read:
+   $authorized_users = array("aduser1", "aduser2", "aduser3");
+
+4. Add your domain to the "ldap.php" file:
+   ---------------------------------------
+   In "ldap.php" find the "// What Domain are we connecting to?" section.
+   Below that heading there will be two variables you will need to modify: $ldap and $domain.
