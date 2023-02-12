@@ -16,7 +16,7 @@ if(isset($_SESSION['loggedin'])){
     }
 
     // List of authorized users
-    $authorized_users = array("jlaroche", "other-it-staff", "more-it-personnel");
+    $authorized_users = array("jlaroche", "other-it-staff", "admin");
 
     // Check if AD user trying to log in is in the Authorized Users array above
     // If they are, proceed with login. If they are not, simply reload the page
